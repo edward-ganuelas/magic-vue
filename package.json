@@ -1,6 +1,6 @@
 {
   "name": "magic-vue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Vue & Magic The Gathering API",
   "author": "Edward Ganuelas <epganuelas@gmail.com>",
   "private": true,
