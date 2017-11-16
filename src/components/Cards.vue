@@ -1,14 +1,19 @@
 <template>
   <div class="cards">
-    <div class="card" v-for="card in cards" v-bind:key="card.id">
-        <h3>{{card.name}}</h3>
+    <div class="card" v-for="item in cards" v-bind:key="item.id">
+        <card v-bind:cardItem="item"></card>
     </div>
   </div>
 </template>
 
 <script>
+import Card from './Card';
+
 export default {
   name: 'Cards',
+  components: {
+      Card
+  },
   props: ['cards'],
   data () {
     return {
